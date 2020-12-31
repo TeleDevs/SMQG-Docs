@@ -82,6 +82,14 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |       | E19 | Elisa Rodrigues        | Projeto da PCB                                                    |
 ---
 
+### Datas previstas
+
+- M1: 17/12/2020
+- M2: 14/01/2021
+- M3: 04/02/2021
+- M4: 04/03/2021
+- M5: 01/04/2021
+
 ### Cronograma de Execução
 |        |   S   |   e   |   m   |   a   |   n   |   a   |   s   |       |       |       |       |       |       |       |       |       |
 | ------ | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
