@@ -48,38 +48,29 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 
 ### Identificação das Metas/Macro entregas 
 
-| Nº  | Meta (descrição)                                                                                      | Indicadores (físico)                                                 |
-| --- | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| M1  | Definição, estudo e aquisições (solução com estação protótipo)                                        | Documentação do ferramental, equipamentos adquiridos, diagramas UML. |
-| M2  | Desenvolvimento do sistema de monitoramento                                                           | Relatório técnico com diagramas finalizado                           |
-| M3  | Desenvolvimento do sistema servidor (aplicação e gateway) e integração com o sistema de monitoramento | Relatório técnico com diagramas finalizado                           |
-| M4  | Validação do MVP                                                                                      | MVP funcional                                                        |
-| M5  | Definição, estudo e aquisições (para produto final)                                                   | Projeto da PCB e orçamento                                           |
----
-
-### Identificação das Etapas
-
 | Metas | Nº  | Responsável pela etapa | Descrição das atividades                                          |
-| ----- | --- | ---------------------- | ----------------------------------------------------------------- |
+|-------|-----|------------------------|-------------------------------------------------------------------|
 | M1    | E1  | Elisa Rodrigues        | Definição do plano de trabalho                                    |
 |       | E2  | Guilherme Roque        | Definição do hardware para protótipo                              |
 |       | E3  | Yan Martins            | Definição do hardware para sistema servidor (aplicação e gateway) |
 |       | E4  | Elisa Rodrigues        | Definição do software para protótipo                              |
 |       | E5  | Guilherme Roque        | Definição do software para sistema servidor (aplicação e gateway) |
 |       | E6  | Yan Martins            | Requisitar materiais e infraestrutura necessária                  |
-| M2    | E7  | Elisa Rodrigues        | Desenvolvimento dos drivers (estação)                             |
-|       | E8  | Guilherme Roque        | Desenvolvimento da interface LoRa (estação)                       |
-|       | E9  | Yan Martins            | Desenvolvimento da interface Bluetooth (estação)                  |
-|       | E10 | Elisa Rodrigues        | Desenvolvimento da FSM (estação)                                  |
-| M3    | E11 | Guilherme Roque        | Desenvolvimento da interface LoRa (gateway)                       |
-|       | E12 | Yan Martins            | Desenvolvimento do software de tratamento de dados (gateway)      |
-|       | E13 | Elisa Rodrigues        | Desenvolvimento da exibição dos dados (aplicação)                 |
-| M4    | E14 | Guilherme Roque        | Validação em bancada                                              |
-|       | E15 | Yan Martins            | Validação em campo                                                |
-|       | E16 | Elisa Rodrigues        | Desenvolvimento dos ajustes finais                                |
-| M5    | E17 | Guilherme Roque        | Definição do hardware para produto final                          |
-|       | E18 | Yan Martins            | Definição do software para produto final                          |
-|       | E19 | Elisa Rodrigues        | Projeto da PCB                                                    |
+| M2    | E7  | Yan Martins            | Desenvolvimento da interface LoRa (estação)                       |
+|       | E8  | Yan Martins            | Desenvolvimento da interface LoRa (gateway)                       |
+|       | E9  | Elisa Rodrigues        | Desenvolvimento da interface Bluetooth (estação)                  |
+|       | E10 | Guilherme Roque        | Upload de dados na TTN                                            |
+|       | E11 | Guilherme Roque        | Consulta de dados na TTN                                          |
+| M3    | E12 | Elisa Rodrigues        | Desenvolvimento dos drivers (estação)                             |
+|       | E13 | Yan Martins            | Desenvolvimento do software de tratamento de dados (gateway)      |
+|       | E14 | Elisa Rodrigues        | Desenvolvimento da FSM (estação)                                  |
+|       | E15 | Elisa Rodrigues        | Desenvolvimento da exibição dos dados (aplicação)                 |
+| M4    | E16 | Guilherme Roque        | Validação em bancada                                              |
+|       | E17 | Yan Martins            | Validação em campo                                                |
+|       | E18 | Elisa Rodrigues        | Desenvolvimento dos ajustes finais                                |
+| M5    | E19 | Guilherme Roque        | Definição do hardware para produto final                          |
+|       | E20 | Yan Martins            | Definição do software para produto final                          |
+|       | E21 | Elisa Rodrigues        | Projeto da PCB                                                    |
 ---
 
 ### Datas previstas
@@ -106,29 +97,33 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |   18   | 15/04/2021 |     M5     |        |
 |   19   | 22/04/2021 | entrega M5 |        |
 
+---
+
 ### Cronograma de Execução
-|        |   S   |   e   |   m   |   a   |   n   |   a   |   s   |       |       |       |       |       |       |       |       |       |
-| ------ | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Etapas |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |  10   |  11   |  12   |  13   |  14   |  15   |  16   |
-| E1     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E2     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E3     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E4     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E5     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E6     |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
-| E7     |       |      |      |      |   x   |       |       |       |       |       |       |       |       |       |       |       |
-| E8     |       |      |      |      |   x   |       |       |       |       |       |       |       |       |       |       |       |
-| E9     |       |     |      |      |   x   |       |       |       |       |       |       |       |       |       |       |       |
-| E10    |       |     |      |      |   x   |       |       |       |       |       |       |       |       |       |       |       |
-| E11    |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |       |       |       |
-| E12    |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |       |       |       |
-| E13    |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |       |       |       |
-| E14    |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |
-| E15    |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |
-| E16    |       |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |
-| E17    |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |   x   |
-| E18    |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |   x   |
-| E19    |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |   x   |
+|        | S | e | m | a | n | a | s |   |   |    |    |    |    |    |    |    |    |    |    |
+|--------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|---|----|----|----|----|----|----|----|----|----|----|
+| Etapas | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 |
+| E1     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E2     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E3     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E4     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E5     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E6     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
+| E7     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
+| E8     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
+| E9     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
+| E10    |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
+| E11    |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
+| E12    |   |   |   |   |   |   |   |   |   |    | x  | x  | x  |    |    |    |    |    |    |
+| E13    |   |   |   |   |   |   |   |   |   |    | x  | x  | x  |    |    |    |    |    |    |
+| E14    |   |   |   |   |   |   |   |   |   |    |  x | x  | x  |    |    |    |    |    |    |
+| E15    |   |   |   |   |   |   |   |   |   |    |  x | x  | x  |    |    |    |    |    |    |
+| E16    |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  |    |    |    |
+| E17    |   |   |   |   |   |   |   |   |   |    |    |    |    |  x |  x |  x |    |    |    |
+| E18    |   |   |   |   |   |   |   |   |   |    |    |    |    |  x |  x |  x |    |    |    |
+| E19    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
+| E20    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
+| E21    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
 
 ---
 
