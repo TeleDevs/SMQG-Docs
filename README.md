@@ -3,8 +3,8 @@
 
 ### Documentação disponível:
 
-- M2
-    - [Plano de trabalho](m2/plano_de_trabalho.md)
+- M1
+    - [Plano de trabalho](m1/plano_de_trabalho.md)
 
-- M3
-    - [Formato das mensagens](m3/formato_msg.md)
+- M2
+    - [Formato das mensagens](m2/formato_msg.md)
