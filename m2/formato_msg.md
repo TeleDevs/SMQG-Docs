@@ -65,4 +65,4 @@ function Decoder(bytes, port) {
 ```
 
 Aqui há uma versão funcional do decoder em python:
-- [Decoder em python](m2/teste_decoder.py)
+- [Decoder em python](teste_decoder.py)
