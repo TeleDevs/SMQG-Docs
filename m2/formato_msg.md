@@ -2,11 +2,10 @@
 
 ## Enquadramento dos dados
 
-O formato das mensagens será uma sequência de byte que representam três campos: `identificador`, `temperatura` e `umidade`. O tamanho de todo pacote **DEVE** ser 4 bytes. A tabela abaixo define os tamanhos de cada campo do pacote:
+O formato das mensagens será uma sequência de byte que representam três campos: `temperatura` e `umidade`. O tamanho de todo *payload* **DEVE** ser 2 bytes. A tabela abaixo define os tamanhos de cada campo do pacote:
 
 |Nome do campo| Tamanho |Descrição|
 |-|-|-|
-|identificador|2 bytes|identificador do endpoint|
 |temperatura|1 byte|valor medido da temperatura|
 |umidade|1 byte|valor medido da umidade|
 
@@ -16,17 +15,15 @@ O formato das mensagens será uma sequência de byte que representam três campo
 
 Para o pacote em hexadecimal a seguir:
 
-- `01 FF 18 50`
+- `18 50`
 
 Temos:
 
-- Identificador: `01 FF`
 - Temperatura: `18`
 - Umidade: `50`
 
 O que convertido para decimal é:
 
-- Identificador: `256`
 - Temperatura: `24`
 - Umidade: `80`
 
@@ -42,12 +39,10 @@ Em `Payload Formats` é possível inserir um código (em javaScript) capaz de tr
 
 ```js
 function Decoder(bytes, port) {
-  var id = bytes[0] + bytes[1];
-  var tmp = bytes[2]
-  var umi = bytes[3]
+  var tmp = bytes[0];
+  var umi = bytes[1];
 
   return {
-    identificador: id,
     temperatura: tmp,
     umidade: umi
   };
@@ -58,7 +53,6 @@ function Decoder(bytes, port) {
 
 ```json
 {
-    "identificador" : 0,
     "temperatura" : 0,
     "umidade" : 0
 }
