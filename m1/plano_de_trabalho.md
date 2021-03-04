@@ -56,13 +56,13 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |       | E4  | Elisa Rodrigues        | Definição do software para protótipo                              |
 |       | E5  | Guilherme Roque        | Definição do software para sistema servidor (aplicação e gateway) |
 |       | E6  | Yan Martins            | Requisitar materiais e infraestrutura necessária                  |
-| M2    | E7  | Yan Martins            | Desenvolvimento da interface LoRa (estação)                       |
-|       | E8  | Yan Martins            | Desenvolvimento da interface LoRa (gateway)                       |
-|       | E9  | Elisa Rodrigues        | Desenvolvimento da interface Bluetooth (estação)                  |
-|       | E10 | Guilherme Roque        | Upload de dados na TTN                                            |
-|       | E11 | Guilherme Roque        | Consulta de dados na TTN                                          |
+| M2    | E7  | Guilherme Roque        | Implementação banco de dados                       |
+|       | E8  | Guilherme Roque        | Implementação *dashboard* grafana                    |
+|       | E9  | Elisa Rodrigues        | Implementação da leitura do DHT11                  |
+|       | E10 | Yan Martins        | Especificação do payload na TTN                                             |
+|       | E11 | Yan Martins        | Desenvolvimento do software de tratamento de dados( gateway) |
 | M3    | E12 | Elisa Rodrigues        | Desenvolvimento dos drivers (estação)                             |
-|       | E13 | Yan Martins            | Desenvolvimento do software de tratamento de dados (gateway)      |
+|       | E13 | Yan Martins            | Upload de dados na TTN     |
 |       | E14 | Elisa Rodrigues        | Desenvolvimento da FSM (estação)                                  |
 |       | E15 | Elisa Rodrigues        | Desenvolvimento da exibição dos dados (aplicação)                 |
 | M4    | E16 | Guilherme Roque        | Validação em bancada                                              |
@@ -84,16 +84,16 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |    5   | 14/01/2021 |   Férias   |   -    |
 |    6   | 21/01/2021 |   Férias   |   -    |
 |    7   | 28/01/2021 |   Férias   |   -    |
-|    8   | 04/02/2021 |     M2     |        |
-|    9   | 11/02/2021 |     M2     |        |
-|   10   | 18/02/2021 | entrega M2 |        |
-|   11   | 25/02/2021 |     M3     |        |
-|   12   | 04/03/2021 |     M3     |        |
-|   13   | 11/03/2021 | entrega M3 |        |
-|   14   | 18/03/2021 |     M4     |        |
-|   15   | 25/03/2021 |     M4     |        |
-|   16   | 01/04/2021 | entrega M4 |        |
-|   17   | 08/04/2021 |     M5     |        |
+|    8   | 04/02/2021 |     M2     |   -    |
+|    9   | 11/02/2021 |     M2     |   -    |
+|   10   | 18/02/2021 |     M2     |   -    |
+|   11   | 25/02/2021 |     M2     |   -    |
+|   12   | 04/03/2021 | entrega M2 |        |
+|   13   | 11/03/2021 |     M3     |        |
+|   14   | 18/03/2021 |     M3     |        |
+|   15   | 25/03/2021 | entrega M3 |        |
+|   16   | 01/04/2021 |     M4     |        |
+|   17   | 08/04/2021 | entrega M4 |        |
 |   18   | 15/04/2021 |     M5     |        |
 |   19   | 22/04/2021 | entrega M5 |        |
 
@@ -109,21 +109,21 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 | E4     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
 | E5     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
 | E6     | x |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    |    |    |
-| E7     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
-| E8     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
-| E9     |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
-| E10    |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
-| E11    |   |   |   |   |   |   |   | x | x | x  |    |    |    |    |    |    |    |    |    |
-| E12    |   |   |   |   |   |   |   |   |   |    | x  | x  | x  |    |    |    |    |    |    |
-| E13    |   |   |   |   |   |   |   |   |   |    | x  | x  | x  |    |    |    |    |    |    |
-| E14    |   |   |   |   |   |   |   |   |   |    |  x | x  | x  |    |    |    |    |    |    |
-| E15    |   |   |   |   |   |   |   |   |   |    |  x | x  | x  |    |    |    |    |    |    |
-| E16    |   |   |   |   |   |   |   |   |   |    |    |    |    | x  | x  | x  |    |    |    |
-| E17    |   |   |   |   |   |   |   |   |   |    |    |    |    |  x |  x |  x |    |    |    |
-| E18    |   |   |   |   |   |   |   |   |   |    |    |    |    |  x |  x |  x |    |    |    |
-| E19    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
-| E20    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
-| E21    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    | x  | x  | x  |
+| E7     |   |   |   |   |   |   |   | x | x | x  | x  | x  |    |    |    |    |    |    |    |
+| E8     |   |   |   |   |   |   |   | x | x | x  | x  | x  |    |    |    |    |    |    |    |
+| E9     |   |   |   |   |   |   |   | x | x | x  | x  | x  |    |    |    |    |    |    |    |
+| E10    |   |   |   |   |   |   |   | x | x | x  | x  | x  |    |    |    |    |    |    |    |
+| E11    |   |   |   |   |   |   |   | x | x | x  | x  | x  |    |    |    |    |    |    |    |
+| E12    |   |   |   |   |   |   |   |   |   |    |    |    | x  | x  | x  |    |    |    |    |
+| E13    |   |   |   |   |   |   |   |   |   |    |    |    | x  | x  | x  |    |    |    |    |
+| E14    |   |   |   |   |   |   |   |   |   |    |    |    | x  | x  | x  |    |    |    |    |
+| E15    |   |   |   |   |   |   |   |   |   |    |    |    | x  | x  | x  |    |    |    |    |
+| E16    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    | x  | x  |    |    |
+| E17    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |  x | x  |    |    |
+| E18    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |  x | x  |    |    |
+| E19    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
+| E20    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
+| E21    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
 
 ---
 
