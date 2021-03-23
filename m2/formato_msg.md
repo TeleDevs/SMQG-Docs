@@ -6,6 +6,7 @@ O formato das mensagens será uma sequência de byte que representam três campo
 
 |Nome do campo| Tamanho |Descrição|
 |-|-|-|
+|id|2 bytes|identificador da saca|
 |temperatura|1 byte|valor medido da temperatura|
 |umidade|1 byte|valor medido da umidade|
 
