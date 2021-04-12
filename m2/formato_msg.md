@@ -1,63 +1,53 @@
 # Formato das mensagens
 
-## Enquadramento dos dados
+O formato das mensagens será em JSON:
 
-O formato das mensagens será uma sequência de byte que representam três campos: `temperatura` e `umidade`. O tamanho de todo *payload* **DEVE** ser 2 bytes. A tabela abaixo define os tamanhos de cada campo do pacote:
+- O dispositivo Android SEMPRE irá enviar uma mensagem com um único campo o `cod`. Veja os possíveis valores deste campo logo abaixo:
 
-|Nome do campo| Tamanho |Descrição|
-|-|-|-|
-|id|2 bytes|identificador da saca|
-|temperatura|1 byte|valor medido da temperatura|
-|umidade|1 byte|valor medido da umidade|
+|Valor|Descrição|
+|:-:|-|
+|1|Solicita a coleta dos dados do sensor naquele instante. |
+|2|Solicita a coleta dos dados do sensor que estão armazenados no Arduino. |
 
----
+- A estação (Arduino) possui uma resposta diferente de acordo com o comando recebido. Essas mensagens podem ser vistas a seguir:
 
-## Exemplo:
+    - Realizar coleta atual
 
-Para o pacote em hexadecimal a seguir:
+        - Mensagem pedido (`Android -> Arduino`):
 
-- `18 50`
+            ```json
+            {
+                "cod":1
+            }
+            ```
 
-Temos:
+        - Mensagem resposta (`Arduino -> Android`):
 
-- Temperatura: `18`
-- Umidade: `50`
+            ```json
+            {
+                "id":123,
+                "tmp":29,
+                "umi":80
+            }
+            ```
 
-O que convertido para decimal é:
+    - Realizar coleta dos valores armazenados
 
-- Temperatura: `24`
-- Umidade: `80`
+        - Mensagem pedido (`Android -> Arduino`):
 
-----
+            ```json
+            {
+                "cod":2
+            }
+            ```
 
-## Aplicação na TTN: payload
+        - Mensagem resposta (`Arduino -> Android`):
 
-Em `Payload Formats` é possível inserir um código (em javaScript) capaz de transformar os valores recebidos para que os mesmos se tornem de fácil identificação.
-
-- [Exemplo: ttn-lorawan-application](https://github.com/mftutui/ttn-lorawan-application#aplica%C3%A7%C3%A3o-payload)
-
-- Decoder:
-
-```js
-function Decoder(bytes, port) {
-  var tmp = bytes[0];
-  var umi = bytes[1];
-
-  return {
-    temperatura: tmp,
-    umidade: umi
-  };
-}
-```
-
-- Payload:
-
-```json
-{
-    "temperatura" : 0,
-    "umidade" : 0
-}
-```
-
-Aqui há uma versão funcional do decoder em python:
-- [Decoder em python](teste_decoder.py)
+            ```json
+            {
+                "id":123,
+                "dia":12042020,
+                "tmp":29,
+                "umi":80
+            }
+            ```
