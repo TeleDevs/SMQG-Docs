@@ -9,7 +9,7 @@
     - [Formato das mensagens](primeira_versao_LORA/formato_msg.md)
 
 
-> ⚠️ Devido a problemas de funcionamento do módulo LoRa, optamos por continuar o projeto utilizando Bluetooth. Sendo um dispositivo Android realizando a função de um *gateway*.
+> ⚠️ Devido a problemas de funcionamento do módulo LoRa, optamos por continuar o projeto utilizando Bluetooth. Sendo um dispositivo Android a realizar a função de um *gateway*.
 
 
 - M1
