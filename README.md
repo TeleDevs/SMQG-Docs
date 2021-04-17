@@ -15,10 +15,11 @@
 - M1
     - [Plano de trabalho](m1/pdt_sem_lora.md)
     - [Planejamento de produtos](m1/planejamento_de_prod.md)
+     - [Modelo da comunicação](m1/modelo_proj.md)
 
 - M2
     - [Formato das mensagens](m2/formato_msg.md)
-
+   
 - M3
     - [Estação](m3/estacao.md)
     - [Gateway Bluetooth-MQTT](m3/gateway.md)
