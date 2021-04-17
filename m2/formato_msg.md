@@ -1,5 +1,7 @@
 # Formato das mensagens
 
+## Comunicação Estação - Gateway
+
 O formato das mensagens será em JSON:
 
 - O dispositivo Android SEMPRE irá enviar uma mensagem com um único campo o `cod`. Veja os possíveis valores deste campo logo abaixo:
@@ -57,3 +59,17 @@ O formato das mensagens será em JSON:
                 "dia":12042020
             }
             ```
+
+## Comunicação Gateway - Broker MQTT
+
+O formato das mensagens será em JSON. Ao realizar o método `PUBLISH`, o Gateway irá enviar uma mensagem com o seguinte formato:
+
+```json
+{
+    "idGateway":111,
+    "idSensor":222,
+    "temperature":29,
+    "humidity":80,
+    "datetime":"2021-03-14 13:07:08.104114"
+}
+```
