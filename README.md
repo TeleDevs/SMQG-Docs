@@ -20,4 +20,12 @@
     - [Formato das mensagens](m2/formato_msg.md)
 
 - M3
-    - [Gateway Bluetooth](m3/gateway.md)
+    - [Estação](m3/estacao.md)
+    - [Gateway Bluetooth-MQTT](m3/gateway.md)
+    - [Aplicação no Grafana](m3/aplicacao.md)
+
+- M4
+    - [Validação da proposta](m4/validacao.md)
+
+- M5
+    - [Produto final](m5/prodfinal.md)
