@@ -56,21 +56,20 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |       | E4  | Elisa Rodrigues        | Definição do software para protótipo                              |
 |       | E5  | Guilherme Roque        | Definição do software para sistema servidor (aplicação e gateway) |
 |       | E6  | Yan Martins            | Requisitar materiais e infraestrutura necessária                  |
-| M2    | E7  | Guilherme Roque        | Implementação banco de dados                       |
-|       | E8  | Guilherme Roque        | Implementação MQTT client                    |
-|       | E9  | Elisa Rodrigues        | Implementação da leitura do DHT11                  |
-|       | E10 | Yan Martins        | Especificação do payload                                             |
-|       | E11 | Yan Martins        | Desenvolvimento do aplicativo Android |
-| M3    | E12 | Elisa Rodrigues        | Persistir dados na estação (estação)                             |
-|       | E13 | Elisa Rodrigues       | Envio de dados via Bluetooth (estação Android)     |
-|       | E14 | Yan Martins        | Recepção de dados via Bluetooth ( Android)         |
+| M2    | E7  | Guilherme Roque        | Implementação banco de dados                                      |
+|       | E8  | Guilherme Roque        | Implementação MQTT client                                         |
+|       | E9  | Elisa Rodrigues        | Implementação da leitura do DHT11                                 |
+|       | E10 | Yan Martins            | Especificação do payload                                          |
+|       | E11 | Yan Martins            | Desenvolvimento do aplicativo Android                             |
+| M3    | E12 | Elisa Rodrigues        | Persistir dados na estação (estação)                              |
+|       | E13 | Elisa Rodrigues        | Envio de dados via Bluetooth (estação Android)                    |
+|       | E14 | Yan Martins            | Recepção de dados via Bluetooth ( Android)                        |
 |       | E15 | Guilherme Roque        | Desenvolvimento da exibição dos dados (aplicação)                 |
 | M4    | E16 | Guilherme Roque        | Validação em bancada                                              |
-|       | E17 | Yan Martins            | Validação em campo                                                |
+|       | E17 | Yan Martins            | Validação do conceito                                             |
 |       | E18 | Elisa Rodrigues        | Desenvolvimento dos ajustes finais                                |
 | M5    | E19 | Guilherme Roque        | Definição do hardware para produto final                          |
 |       | E20 | Yan Martins            | Definição do software para produto final                          |
-|       | E21 | Elisa Rodrigues        | Projeto da PCB                                                    |
 
 ### Cronograma de Execução
 |        | S | e | m | a | n | a | s |   |   |    |    |    |    |    |    |    |    |    |    |
@@ -96,16 +95,15 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 | E18    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |  x | x  |    |    |
 | E19    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
 | E20    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
-| E21    |   |   |   |   |   |   |   |   |   |    |    |    |    |    |    |    |    | x  | x  |
 
 ---
 
 ## Materiais e insumos previstos
 
-- Arduino/Esp
-- Sensor de umidade
-- Sensor de temperatura
-- Módulo Bluetooth
+- Arduino nano
+- Sensor DHT11
+- Módulo BLE RS232 HC-05
 - Protoboard
 - Jumper
-- Leds
+- Servidor Linux (Broker MQTT)
+- Dispositivo móvel Android v9
