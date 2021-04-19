@@ -57,7 +57,7 @@ Desenvolver sistema distribuído de baixo custo para monitoramento de medidas do
 |       | E5  | Guilherme Roque        | Definição do software para sistema servidor (aplicação e gateway) |
 |       | E6  | Yan Martins            | Requisitar materiais e infraestrutura necessária                  |
 | M2    | E7  | Guilherme Roque        | Implementação banco de dados                       |
-|       | E8  | Guilherme Roque        | Implementação *dashboard* grafana                    |
+|       | E8  | Guilherme Roque        | Implementação MQTT client                    |
 |       | E9  | Elisa Rodrigues        | Implementação da leitura do DHT11                  |
 |       | E10 | Yan Martins        | Especificação do payload                                             |
 |       | E11 | Yan Martins        | Desenvolvimento do aplicativo Android |
