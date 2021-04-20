@@ -51,4 +51,6 @@ A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 
 # Resultados
 
-O gateway conseguiu se comunicar com a estação e com o broker MQTT com sucesso.
+O gateway conseguiu se comunicar com a estação e com o broker MQTT com sucesso. Abaixo há uma imagem dos dados recebidos pelo broker MQTT:
+
+![coleta](img/rx_sub_broker.png)
