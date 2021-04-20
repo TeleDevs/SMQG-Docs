@@ -16,7 +16,7 @@ Esquema para montagem do circuito. Demonstra as pinagens tanto do módulo Blueto
 
 ### Montagem realizada:
 
-Montagem da placa para coleta de temperatura e umidade do ambiente, junto com o módulo para comunicação Bluetooth para envios dos dados coletados e armazenados.
+Montagem da placa utilizando o Arduino Nano para coleta de temperatura e umidade do ambiente, junto com o módulo para comunicação Bluetooth para envios dos dados coletados e armazenados. 
 
 ![](img/pj3_circuito.jpeg)
 
