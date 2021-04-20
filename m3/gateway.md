@@ -16,7 +16,7 @@ A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 - Nesse caso, `HC-05` é o nome padrão do sensor Bluetooth utilizado neste projeto.
 - Deve-se ser selecionada uma das estações para avançar para a tela seguinte.
 
-![sacas](img/sacasconectadas.png)
+<img src="img/sacasconectadas.png" alt="drawing" width="300"/>
 
 ---
 
@@ -31,7 +31,7 @@ A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 - O botão `COLETAR ARMAZENADO` solicita a estação a coleta de todos os valores armazenados.
 - Na parte inferior dessa aba é mostrada a última coleta recebida.
 
-![coleta](img/coletas.png)
+<img src="img/coletas.png" alt="drawing" width="300"/>
 
 ---
 
@@ -40,14 +40,13 @@ A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 - Nesta aba é onde o Gateway irá enviar toda a informação recebida para o broker MQTT.
 - Ao pressionar o botão `PUBLISH` todos os dados contidos no dispositivo Android serão enviadas e posteriormente excluídas do dispositivo.
 
-![coleta](img/publish.png)
+<img src="img/publish.png" alt="drawing" width="300"/>
 
 # Histórico de conexões e publish
 
 - Esta aba exibe um histórico de toda a comunicação com o broker MQTT.
 
-![coleta](img/historico.png)
-
+<img src="img/historico.png" alt="drawing" width="300"/>
 
 # Resultados
 
