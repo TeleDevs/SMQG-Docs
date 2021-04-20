@@ -10,6 +10,8 @@
 
 ### Diagrama do projeto:
 
+Esquema para montagem do circuito. Demonstra as pinagens tanto do módulo Bluetooth HC-05 quanto do sensor de umidade e temperatura DHT11.
+
 ![](img/Circuito_BT_DHT11.png)
 
 ### Montagem realizada:
