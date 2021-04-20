@@ -14,6 +14,8 @@
 
 ### Montagem realizada:
 
+Montagem da placa para coleta de temperatura e umidade do ambiente, junto com o módulo para comunicação Bluetooth para envios dos dados coletados e armazenados.
+
 ![](img/pj3_circuito.jpeg)
 
 ### Teste de comunicação:
