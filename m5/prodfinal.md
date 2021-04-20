@@ -6,7 +6,7 @@
 
 A interface do aplicativo Android desenvolvido nesse projeto, teve o intuito de abordar uma área mais técnica. Exibindo dados da comunicação Bluetooth e com o Broker MQTT. Esse tipo de interface, pode não ser tão intuitiva para um usuário final.
 
-Hoje, para coletar e publicar as coletas o usuário deve seguir o seguinte procedimento:
+Nesse cenário, para coletar e publicar as coletas o usuário deve seguir o seguinte procedimento:
 
 1. Abrir o aplicativo;
 2. Selecionar a saca de grãos;
@@ -15,7 +15,7 @@ Hoje, para coletar e publicar as coletas o usuário deve seguir o seguinte proce
 5. Pressionar o botão `Coletar Armazenado` (comunicação entre Arduino e Android);
 6. Pressionar o botão `Publish` (envio dos dados para o broker MQTT);
 
-O fluxo proposto, resume-se a:
+O fluxo proposto a seguir, busca deixar a interface mais simples e intuitiva. Resumindo-se a:
 
 1. Abrir o aplicativo;
 2. Selecionar a saca de grãos;
