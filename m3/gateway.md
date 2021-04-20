@@ -8,6 +8,16 @@ O Gateway deste projeto trata-se de um aplicativo para Android. O mesmo comunica
 
 A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 
+
+---
+
+## Início da aplicação
+
+- Tela de carregamento do aplicativo.
+
+<img src="img/splash.png" alt="drawing" width="300"/>
+
+
 ---
 
 ## Sacas de grãos conectadas
@@ -17,6 +27,18 @@ A seguir temos algumas capturas de tela do aplicativo desenvolvido:
 - Deve-se ser selecionada uma das estações para avançar para a tela seguinte.
 
 <img src="img/sacasconectadas.png" alt="drawing" width="300"/>
+
+---
+
+## Cadastro cliente MQTT
+
+- Nesta tela é possível fazer o cadastro de um cliente MQTT onde as coletas da estação serão publicadas.
+
+- O campo `Cliente ID` serve apenas de identificador da sessão dentro do próprio aplicativo.
+- O campo `Server` e `Port` referem-se ao endereço do broker MQTT que será acessado.
+- O campo `Local` será utilizado como identificador do local da coleta. É o local onde as sacas estão armazenadas.
+
+<img src="img/newmqtt.png" alt="drawing" width="300"/>
 
 ---
 
