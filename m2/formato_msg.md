@@ -4,13 +4,13 @@
 
 O formato das mensagens será em JSON:
 
-- O dispositivo Android SEMPRE irá enviar uma mensagem com um único campo o `cod`. Veja os possíveis valores deste campo logo abaixo:
-
+- O dispositivo Android SEMPRE irá enviar uma mensagem com pelo menos o campo o `cod`. Veja os possíveis valores deste campo logo abaixo:
 
 ---
 
 |Valor|Descrição|
 |:-:|-|
+|0|Realiza o sincronismo do relógio do Arduino.
 |1|Solicita a coleta dos dados do sensor naquele instante. |
 |2|Solicita a coleta dos dados do sensor que estão armazenados no Arduino. |
 
@@ -18,47 +18,57 @@ O formato das mensagens será em JSON:
 
 - A estação (Arduino) possui uma resposta diferente de acordo com o comando recebido. Essas mensagens podem ser vistas a seguir:
 
-    - Realizar coleta atual
+- **Sincronizar relógio**
 
-        - Mensagem pedido (`Android -> Arduino`):
+    - Mensagem pedido (`Android -> Arduino`):
 
-            ```json
-            {
-                "cod":1
-            }
-            ```
+        ```json
+        {
+            "cod":0,
+            "time":1618885785
+        }
+        ```
+        > Não há mensagem de resposta.
 
-        - Mensagem resposta (`Arduino -> Android`):
+- **Realizar coleta atual**
 
-            ```json
-            {
-                "id":123,
-                "tmp":29,
-                "umi":80, 
-                "dia":12042020
-            }
-            ```
+    - Mensagem pedido (`Android -> Arduino`):
 
-    - Realizar coleta dos valores armazenados
+        ```json
+        {
+            "cod":1
+        }
+        ```
 
-        - Mensagem pedido (`Android -> Arduino`):
+    - Mensagem resposta (`Arduino -> Android`):
 
-            ```json
-            {
-                "cod":2
-            }
-            ```
+        ```json
+        {
+            "tmp":29,
+            "umi":80, 
+            "dia":"2021-03-14 13:07:08.104114"
+        }
+        ```
 
-        - Mensagem resposta (`Arduino -> Android`):
+- **Realizar coleta dos valores armazenados**
 
-            ```json
-            {
-                "id":123,
-                "tmp":29,
-                "umi":80,
-                "dia":12042020
-            }
-            ```
+    - Mensagem pedido (`Android -> Arduino`):
+
+        ```json
+        {
+            "cod":2
+        }
+        ```
+
+    - Mensagem resposta (`Arduino -> Android`):
+
+        ```json
+        {
+            "tmp":29,
+            "umi":80,
+            "dia":"2021-03-14 13:07:08.104114"
+        }
+        ```
 
 ## Comunicação Gateway - Broker MQTT
 
@@ -66,9 +76,9 @@ O formato das mensagens será em JSON. Ao realizar o método `PUBLISH`, o Gatewa
 
 ```json
 {
-    "idGateway":111,
-    "idSensor":222,
-    "temperature":29,
+    "idLocal":"SJ-001",
+    "idSensor":"00:20:10:07:33:A4",
+    "temperature":29.30,
     "humidity":80,
     "datetime":"2021-03-14 13:07:08.104114"
 }
