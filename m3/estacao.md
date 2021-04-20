@@ -16,7 +16,7 @@
 
 ![](img/pj3_circuito.jpeg)
 
-### Montagem realizada:
+### Teste de comunicação:
 
 Teste da comunicação Bluetooth utilizando aplicativo 'Bluetooth SPP'
 
