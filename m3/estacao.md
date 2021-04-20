@@ -14,4 +14,4 @@
 
 ### Montagem realizada:
 
-![](img/montagemestacao.jpg)
+![](img/pj3_circuito.jpeg)
