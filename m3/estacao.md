@@ -15,3 +15,9 @@
 ### Montagem realizada:
 
 ![](img/pj3_circuito.jpeg)
+
+### Montagem realizada:
+
+Teste da comunicação Bluetooth utilizando aplicativo 'Bluetooth SPP'
+
+![](img/teste_serial_BLE.jpeg)
