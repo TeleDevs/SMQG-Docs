@@ -48,7 +48,7 @@ Cálculo para quantidade de dias de armazenamento:
 
 *512 bytes / (quantidade de leituras diárias * 9 (quantidade de bytes armazenados por leitura)) = quantidade de dias armazenados*
 
-## Desenvolvimento no código na plataforma Arduino IDE
+## Desenvolvimento do código na plataforma Arduino IDE
 
 É possível acessar o código de implementação da estação aqui:
 [estação.ino](https://github.com/TeleDevs/SMQG-Docs/blob/main/m3/estacao.ino)
@@ -59,4 +59,12 @@ Para uso do DHT11: [library](https://github.com/adafruit/DHT-sensor-library)
 
 Para definir o Time: [library](https://github.com/PaulStoffregen/Time)
 
+## Orçamento para implementação
+
+Segue orçamento para protótipo de estação para coleta de dados de temperatura e umidade e envio através da conexão bluetooth:
+
+- Arduino Nano Atmega328 aproximadamente R$30,00
+- Sensor de Temperatura e Umidade DHT11 aproxidamente R$10,00
+- Módulo Bluetooth HC-05 aproximadamente R$27,00
+- Kit com resistores aproximamente R$2,00
 
