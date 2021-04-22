@@ -3,7 +3,7 @@
 ##  Hardware 
 
 A estação projetada neste trabalho utilizou componentes e placas de desenvolvimento mais didáticas para a criar a solução. A utilização do arduino nano traz algumas limitações, principalmente de capacidade de armazenamento para os dados coletados pelo sensor.
-Uma solucação para criar um maior armezanamento de dados é utilizar chip extras na placa, como por exemplo o módulo de memória EEPROM At24c256, com uma capacidade de 32kbytes permitindo o armazenamento de muito mais dados coletados.
+Uma solucação para esse problema é utilizar chips extras na placa, como por exemplo o módulo de memória EEPROM At24c256, com uma capacidade de 32kbytes permitindo o armazenamento de muito mais dados coletados.
 
 O preço do módulo de memória EEPROM At24c256 tem o custo de aproximadamente R$15,00, inseridos no orçamento da estação.
 
