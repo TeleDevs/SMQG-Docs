@@ -45,6 +45,7 @@ Com essa quantidade de coletas diárias, conseguimos armazenar dados de 14 dias 
 Caso o número de coleta diárias aumente, a quantidade de dias será reduzida.
 
 Cálculo para quantidade de dias de armazenamento:
+
 *512 bytes / (quantidade de leituras diárias * 9 (quantidade de bytes armazenados por leitura)) = quantidade de dias armazenados*
 
 ## Desenvolvimento no código na plataforma Arduino IDE
