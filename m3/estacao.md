@@ -49,7 +49,7 @@ Cálculo para quantidade de dias de armazenamento:
 
 ## Desenvolvimento no código na plataforma Arduino IDE
 
-É possvel acessar o código de implementação da estação no seguinte link:
--[estação.ino](https://github.com/TeleDevs/SMQG-Docs/blob/main/m3/estacao.ino)
+É possvel acessar o código de implementação da estação aqui:
+[estação.ino](https://github.com/TeleDevs/SMQG-Docs/blob/main/m3/estacao.ino)
 
 
