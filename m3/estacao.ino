@@ -7,12 +7,12 @@
 #define DHTTYPE DHT11 // Define o sensor utilizado: DHT 11
 #define time_cont 1800000 // Variável para definir o tempo entre leituras em milisegundos
 
-//const unsigned long DEFAULT_TIME = 1618800634; // 19 Abril 2021
 
 DHT dht(DHTPIN, DHTTYPE);
 SoftwareSerial serial1(10,11); // RX, TX
 unsigned long ContSensor = millis(); //variavel para contar o tempo entre as leituras do sensor     
-                             
+
+//tamanho dos vetores é igual a quantidade de coletas diárias feitas pelo sensor para armazenamento na EEPROM
 byte array_temp[4];
 byte array_umid[4];
 byte array_temp_deci[4];
