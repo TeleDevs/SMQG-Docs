@@ -19,6 +19,7 @@
 
 - M2
     - [Formato das mensagens](m2/formato_msg.md)
+    - [Cliente MQTT](m2/mqtt_client.md)
    
 - M3
     - [Estação](m3/estacao.md)
