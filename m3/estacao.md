@@ -53,4 +53,10 @@ Cálculo para quantidade de dias de armazenamento:
 É possível acessar o código de implementação da estação aqui:
 [estação.ino](https://github.com/TeleDevs/SMQG-Docs/blob/main/m3/estacao.ino)
 
+Bibliotecas auxiliares utilizadas:
+
+Para uso do DHT11: [library](https://github.com/adafruit/DHT-sensor-library)
+
+Para definir o Time: [library](https://github.com/PaulStoffregen/Time)
+
 
