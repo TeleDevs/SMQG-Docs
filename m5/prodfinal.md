@@ -13,7 +13,7 @@ O módulo RTC DS3231 tem o custo de aproximadamento R$20,00, inseridos no orçam
 
 ### PCB 
 
-Foi utilizado o Easy EDA para projetar o PCB da estação, segue em fotos:
+Foi utilizado o Easy EDA para projetar o PCB da estação, segue as imagens:
 
 ![](img/PCB.png)
 
