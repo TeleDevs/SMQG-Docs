@@ -25,7 +25,7 @@
 - M3
     - [Estação](m3/estacao.md)
     - [Gateway Bluetooth-MQTT](m3/gateway.md)
-    - [Aplicação no Grafana](m3/aplicacao.md)
+    - [Interface gráfica](https://github.com/TeleDevs/SMQG-Server#grafana)
 
 - M4
     - [Validação da proposta](m4/validacao.md)
