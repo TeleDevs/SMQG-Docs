@@ -68,6 +68,6 @@ Segue orçamento para protótipo de estação para coleta de dados de temperatur
 - Módulo Bluetooth HC-05 aproximadamente R$27,00
 - Kit com resistores aproximamente R$2,00
 - Case para montagem do circuito aproximadamente R$19,00
-- Case para baterias aproximadamento R$16,00
+
 
 
