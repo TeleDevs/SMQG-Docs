@@ -19,7 +19,8 @@
 
 - M2
     - [Formato das mensagens](m2/formato_msg.md)
-    - [Cliente MQTT](m2/mqtt_client.md)
+    - [Cliente MQTT](https://github.com/TeleDevs/SMQG-Server#cliente-mqtt)
+    - [Banco de dados](https://github.com/TeleDevs/SMQG-Server#modelo-do-banco-de-dados)
    
 - M3
     - [Estação](m3/estacao.md)
